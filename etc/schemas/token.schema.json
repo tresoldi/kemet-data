@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://kemet-data.org/schemas/token.v1.json",
+  "title": "Token",
+  "description": "Schema for a linguistic token with annotations",
+  "type": "object",
+  "required": [
+    "document_id",
+    "segment_id",
+    "token_id",
+    "order",
+    "form",
+    "content_hash"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "Reference to parent document"
+    },
+    "segment_id": {
+      "type": "string",
+      "description": "Reference to parent segment"
+    },
+    "token_id": {
+      "type": "string",
+      "description": "Stable token identifier"
+    },
+    "order": {
+      "type": "integer",
+      "description": "Position in segment (0-indexed)",
+      "minimum": 0
+    },
+    "form": {
+      "type": "string",
+      "description": "Surface form as in source"
+    },
+    "form_norm": {
+      "type": ["string", "null"],
+      "description": "Normalized form"
+    },
+    "lemma": {
+      "type": ["string", "null"],
+      "description": "Lemma or dictionary form"
+    },
+    "pos": {
+      "type": ["string", "null"],
+      "description": "Part-of-speech tag"
+    },
+    "morph": {
+      "type": ["string", "null"],
+      "description": "Morphological features (UD or source-specific)"
+    },
+    "lang": {
+      "type": ["string", "null"],
+      "description": "Language code for code-switching contexts"
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "description": "Additional token-specific metadata"
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "BLAKE3 hash of form",
+      "pattern": "^blake3:[a-f0-9]{64}$"
+    }
+  }
+}

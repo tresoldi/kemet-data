@@ -1,0 +1,36 @@
+{
+  "test.sample:001": {
+    "annotation": "Test Author",
+    "corpus": "besa.letters",
+    "document_cts_urn": "urn:cts:copticLit:test.sample:1",
+    "entities": "automatic",
+    "identities": "none",
+    "languages": "Sahidic Coptic",
+    "license": "CC-BY 4.0",
+    "parsing": "automatic",
+    "project": "Coptic SCRIPTORIUM",
+    "segmentation": "automatic",
+    "source": "Test Source",
+    "tagging": "automatic",
+    "title": "Test Document 1",
+    "version_date": "2025-10-28",
+    "version_n": "test"
+  },
+  "test.sample:002": {
+    "annotation": "Test Author",
+    "corpus": "besa.letters",
+    "document_cts_urn": "urn:cts:copticLit:test.sample:2",
+    "entities": "automatic",
+    "identities": "none",
+    "languages": "Sahidic Coptic",
+    "license": "CC-BY-SA 4.0",
+    "parsing": "automatic",
+    "project": "Coptic SCRIPTORIUM",
+    "segmentation": "automatic",
+    "source": "Test Source",
+    "tagging": "automatic",
+    "title": "Test Document 2",
+    "version_date": "2025-10-28",
+    "version_n": "test"
+  }
+}

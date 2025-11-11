@@ -1,0 +1,39 @@
+paths:
+  raw: "data/raw"
+  curated: "data/curated"
+  derived: "data/derived"
+  catalog: "etc/catalog/catalog.json"
+
+rates:
+  default_rps: 2
+  max_retries: 5
+  backoff_start_s: 1.0
+  backoff_max_s: 60.0
+
+schema_versions:
+  document: 1
+  segment: 1
+  token: 1
+  alignment: 1
+  manifest: 1
+
+normalize:
+  coptic:
+    unicode_nfc: true
+    keep_diacritics: true
+    also_emit_stripped: true
+  egyptian:
+    canonical_script: "transliteration"
+
+logging:
+  level: "INFO"
+  format: "pretty"  # "json" or "pretty"
+  file: "kemet.log"
+
+parallelism:
+  max_workers: 4
+  chunk_size: 100
+
+parquet:
+  compression: "zstd"
+  compression_level: 3

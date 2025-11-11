@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://kemet-data.org/schemas/alignment.v1.json",
+  "title": "Alignment",
+  "description": "Schema for segment-level alignments between sources",
+  "type": "object",
+  "required": [
+    "left_source",
+    "right_source",
+    "left_document_id",
+    "right_document_id",
+    "left_segment_id",
+    "right_segment_id",
+    "score",
+    "method"
+  ],
+  "properties": {
+    "left_source": {
+      "type": "string",
+      "description": "Left source name"
+    },
+    "right_source": {
+      "type": "string",
+      "description": "Right source name"
+    },
+    "left_document_id": {
+      "type": "string",
+      "description": "Left document identifier"
+    },
+    "right_document_id": {
+      "type": "string",
+      "description": "Right document identifier"
+    },
+    "left_segment_id": {
+      "type": "string",
+      "description": "Left segment identifier"
+    },
+    "right_segment_id": {
+      "type": "string",
+      "description": "Right segment identifier"
+    },
+    "score": {
+      "type": "number",
+      "description": "Alignment score (0-1 or similarity metric)",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "method": {
+      "type": "string",
+      "description": "Alignment method identifier (e.g., 'heuristic_ref', 'bi-encoder@v1')"
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "description": "Additional alignment metadata"
+    }
+  }
+}

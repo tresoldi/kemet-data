@@ -1,0 +1,29 @@
+# Sources configuration for KEMET data pipeline
+# This file contains source-specific settings and paths
+
+sources:
+  horner:
+    enabled: true
+    source_type: "files"
+    path: "tests/fixtures"
+    collections: ["nt"]
+
+  ud_coptic:
+    enabled: true
+    # Automatically clones from GitHub - no additional config needed
+
+  scriptorium:
+    enabled: true
+    # Automatically clones from GitHub - no additional config needed
+
+  tla:
+    enabled: true
+    # Downloads from Hugging Face - no additional config needed
+
+  aes:
+    enabled: true
+    # Repository already cloned at data_raw/aes - no additional config needed
+
+  ramses:
+    enabled: true
+    # Downloaded from Zenodo (DOI: 10.5281/zenodo.4954597) - no additional config needed

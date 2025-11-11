@@ -1,0 +1,20 @@
+# newdoc id = test.sample:001
+# meta::author = Test Author
+# meta::title = Sample UD Coptic Document
+# meta::document_cts_urn = urn:cts:copticLit:test.sample.001
+# global.Entity = etype-identity
+
+# sent_id = test.sample_001_001
+# text = ⲡϫⲱⲱⲙⲉ ⲙⲡⲉϫⲓⲛⲉ ⲛⲓⲏⲥⲟⲩⲥ ·
+1	ⲡϫⲱⲱⲙⲉ	ϫⲱⲱⲙⲉ	NOUN	N	_	0	root	_	Orig=ⲡϫⲱⲱⲙⲉ
+2	ⲙⲡⲉϫⲓⲛⲉ	ⲡⲉϫⲓⲛⲉ	NOUN	N	_	1	nmod	_	_
+3	ⲛⲓⲏⲥⲟⲩⲥ	ⲓⲏⲥⲟⲩⲥ	PROPN	NPROP	_	2	nmod	_	Entity=(person-Jesus)|Orig=ⲛⲓⲏⲥⲟⲩⲥ
+4	·	·	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = test.sample_001_002
+# text = ⲁⲃⲣⲁϩⲁⲙ ⲁϥϫⲡⲟ ⲛⲓⲥⲁⲁⲕ ·
+1	ⲁⲃⲣⲁϩⲁⲙ	ⲁⲃⲣⲁϩⲁⲙ	PROPN	NPROP	_	2	nsubj	_	Entity=(person-Abraham)
+2	ⲁϥϫⲡⲟ	ϫⲡⲉ	VERB	V	_	0	root	_	MSeg=ⲁ-ϥ-ϫⲡⲟ
+3	ⲛⲓⲥⲁⲁⲕ	ⲓⲥⲁⲁⲕ	PROPN	NPROP	_	2	obj	_	Entity=(person-Isaac)|OrigLang=heb
+4	·	·	PUNCT	PUNCT	_	2	punct	_	_
+

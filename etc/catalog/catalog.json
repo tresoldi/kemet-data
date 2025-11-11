@@ -1,0 +1,1164 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "source": "horner",
+      "collection": "nt",
+      "path": "horner/nt",
+      "created_at": "2025-10-28T16:32:26.029998Z",
+      "parser_version": "horner@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 3,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "ud_coptic",
+      "collection": "scriptorium",
+      "path": "ud_coptic/scriptorium",
+      "created_at": "2025-10-28T19:57:35.981133Z",
+      "parser_version": "ud_coptic@0.1.0",
+      "counts": {
+        "documents": 84,
+        "segments": 2360,
+        "tokens": 61051
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo-ephrem",
+      "path": "scriptorium/pseudo-ephrem",
+      "created_at": "2025-10-29T06:35:00.278770Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "sahidic.ruth",
+      "path": "scriptorium/sahidic.ruth",
+      "created_at": "2025-10-29T06:35:38.014444Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 8,
+        "segments": 170,
+        "tokens": 6940
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.pisentius",
+      "path": "scriptorium/life.pisentius",
+      "created_at": "2025-10-29T06:20:59.894296Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 3,
+        "segments": 772,
+        "tokens": 22314
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.fox",
+      "path": "scriptorium/shenoute.fox",
+      "created_at": "2025-10-28T21:01:17.105814Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 194,
+        "tokens": 5090
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "mysteries-john",
+      "path": "scriptorium/mysteries-john",
+      "created_at": "2025-10-29T06:54:46.659135Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo.basil",
+      "path": "scriptorium/pseudo.basil",
+      "created_at": "2025-10-29T06:21:10.797710Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 111,
+        "tokens": 3737
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.errs",
+      "path": "scriptorium/shenoute.errs",
+      "created_at": "2025-10-28T22:02:48.153795Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 66,
+        "tokens": 2046
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-place",
+      "path": "scriptorium/shenoute-place",
+      "created_at": "2025-10-29T06:35:21.319182Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.witness",
+      "path": "scriptorium/shenoute.witness",
+      "created_at": "2025-10-29T06:20:35.292748Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 13,
+        "tokens": 332
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic-treebank",
+      "path": "scriptorium/bohairic-treebank",
+      "created_at": "2025-10-29T06:34:41.231132Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "book-bartholomew",
+      "path": "scriptorium/book-bartholomew",
+      "created_at": "2025-10-29T06:54:25.115698Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.ot",
+      "path": "scriptorium/bohairic.ot",
+      "created_at": "2025-10-28T21:09:25.212966Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 507,
+        "segments": 11161,
+        "tokens": 352403
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/bohairic.ot/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 686001,
+          "row_count": 507
+        },
+        {
+          "path": "scriptorium/bohairic.ot/segments.parquet",
+          "type": "segments",
+          "size_bytes": 2257276,
+          "row_count": 11161
+        },
+        {
+          "path": "scriptorium/bohairic.ot/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 2886356,
+          "row_count": 352403
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.true",
+      "path": "scriptorium/shenoute.true",
+      "created_at": "2025-10-29T06:20:34.950695Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 33,
+        "tokens": 994
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo-timothy",
+      "path": "scriptorium/pseudo-timothy",
+      "created_at": "2025-10-29T06:35:00.523460Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.dirt",
+      "path": "scriptorium/shenoute.dirt",
+      "created_at": "2025-10-28T22:02:42.955890Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 6,
+        "segments": 173,
+        "tokens": 5669
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-seeks",
+      "path": "scriptorium/shenoute-seeks",
+      "created_at": "2025-10-29T06:35:21.380989Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.aphou",
+      "path": "scriptorium/life.aphou",
+      "created_at": "2025-10-29T06:20:47.061040Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 133,
+        "tokens": 4755
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.cyrus",
+      "path": "scriptorium/life.cyrus",
+      "created_at": "2025-10-29T06:20:47.014235Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 3,
+        "segments": 193,
+        "tokens": 5435
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.a22",
+      "path": "scriptorium/shenoute.a22",
+      "created_at": "2025-10-28T21:09:47.647469Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 12,
+        "segments": 534,
+        "tokens": 14999
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/shenoute.a22/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 27240,
+          "row_count": 12
+        },
+        {
+          "path": "scriptorium/shenoute.a22/segments.parquet",
+          "type": "segments",
+          "size_bytes": 80962,
+          "row_count": 534
+        },
+        {
+          "path": "scriptorium/shenoute.a22/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 193941,
+          "row_count": 14999
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.life.isaac",
+      "path": "scriptorium/bohairic.life.isaac",
+      "created_at": "2025-10-29T06:20:59.798449Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 4,
+        "segments": 552,
+        "tokens": 21731
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "dormition-john",
+      "path": "scriptorium/dormition-john",
+      "created_at": "2025-10-29T06:54:46.235805Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "theodosius-alexandria",
+      "path": "scriptorium/theodosius-alexandria",
+      "created_at": "2025-10-29T06:54:25.159870Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-unknown5_1",
+      "path": "scriptorium/shenoute-unknown5_1",
+      "created_at": "2025-10-29T06:35:21.270558Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.phib",
+      "path": "scriptorium/life.phib",
+      "created_at": "2025-10-29T06:20:59.732731Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 132,
+        "tokens": 4720
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.house",
+      "path": "scriptorium/shenoute.house",
+      "created_at": "2025-10-29T06:20:25.211651Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 48,
+        "tokens": 2046
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.mark",
+      "path": "scriptorium/bohairic.mark",
+      "created_at": "2025-10-29T06:34:41.431717Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 25,
+        "segments": 1051,
+        "tokens": 31413
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo.athanasius.discourses",
+      "path": "scriptorium/pseudo.athanasius.discourses",
+      "created_at": "2025-10-29T06:21:11.150765Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 4,
+        "segments": 612,
+        "tokens": 16228
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "johannes-canons",
+      "path": "scriptorium/johannes-canons",
+      "created_at": "2025-10-29T06:54:12.205206Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-uncertain-xr",
+      "path": "scriptorium/shenoute-uncertain-xr",
+      "created_at": "2025-10-29T06:35:21.348389Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo-flavianus",
+      "path": "scriptorium/pseudo-flavianus",
+      "created_at": "2025-10-29T06:35:00.487496Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic-lausiac",
+      "path": "scriptorium/bohairic-lausiac",
+      "created_at": "2025-10-29T06:35:38.069547Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "besa.letters",
+      "path": "scriptorium/besa.letters",
+      "created_at": "2025-10-28T21:10:10.801398Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 10,
+        "segments": 312,
+        "tokens": 7872
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/besa.letters/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 20290,
+          "row_count": 10
+        },
+        {
+          "path": "scriptorium/besa.letters/segments.parquet",
+          "type": "segments",
+          "size_bytes": 34371,
+          "row_count": 312
+        },
+        {
+          "path": "scriptorium/besa.letters/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 86331,
+          "row_count": 7872
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "lament-mary",
+      "path": "scriptorium/lament-mary",
+      "created_at": "2025-10-29T06:54:46.746810Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "coptic-treebank",
+      "path": "scriptorium/coptic-treebank",
+      "created_at": "2025-10-29T06:54:12.231007Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.eustathius.theopiste",
+      "path": "scriptorium/life.eustathius.theopiste",
+      "created_at": "2025-10-29T06:20:47.145909Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 431,
+        "tokens": 10679
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-night",
+      "path": "scriptorium/shenoute-night",
+      "created_at": "2025-10-29T06:35:21.264632Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.those",
+      "path": "scriptorium/shenoute.those",
+      "created_at": "2025-10-29T06:20:35.071418Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 13,
+        "segments": 259,
+        "tokens": 8470
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "sahidica.mark",
+      "path": "scriptorium/sahidica.mark",
+      "created_at": "2025-10-29T06:34:41.529544Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 25,
+        "segments": 1051,
+        "tokens": 30804
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.considering",
+      "path": "scriptorium/shenoute.considering",
+      "created_at": "2025-10-29T06:20:35.121660Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 13,
+        "tokens": 556
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo.chrysostom",
+      "path": "scriptorium/pseudo.chrysostom",
+      "created_at": "2025-10-29T06:21:10.715375Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 412,
+        "tokens": 8355
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "AP",
+      "path": "scriptorium/AP",
+      "created_at": "2025-10-29T06:54:12.089801Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.abraham",
+      "path": "scriptorium/shenoute.abraham",
+      "created_at": "2025-10-28T21:09:52.304331Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 9,
+        "segments": 375,
+        "tokens": 8112
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/shenoute.abraham/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 21849,
+          "row_count": 9
+        },
+        {
+          "path": "scriptorium/shenoute.abraham/segments.parquet",
+          "type": "segments",
+          "size_bytes": 56921,
+          "row_count": 375
+        },
+        {
+          "path": "scriptorium/shenoute.abraham/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 119790,
+          "row_count": 8112
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.onnophrius",
+      "path": "scriptorium/life.onnophrius",
+      "created_at": "2025-10-28T21:10:01.716113Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 5,
+        "segments": 472,
+        "tokens": 11216
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/life.onnophrius/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 12414,
+          "row_count": 5
+        },
+        {
+          "path": "scriptorium/life.onnophrius/segments.parquet",
+          "type": "segments",
+          "size_bytes": 72221,
+          "row_count": 472
+        },
+        {
+          "path": "scriptorium/life.onnophrius/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 140414,
+          "row_count": 11216
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.john.kalybites",
+      "path": "scriptorium/life.john.kalybites",
+      "created_at": "2025-10-29T06:20:47.134226Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 3,
+        "segments": 486,
+        "tokens": 11889
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.eagerness",
+      "path": "scriptorium/shenoute.eagerness",
+      "created_at": "2025-10-28T21:09:57.025629Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 18,
+        "segments": 1108,
+        "tokens": 17064
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/shenoute.eagerness/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 50160,
+          "row_count": 18
+        },
+        {
+          "path": "scriptorium/shenoute.eagerness/segments.parquet",
+          "type": "segments",
+          "size_bytes": 118239,
+          "row_count": 1108
+        },
+        {
+          "path": "scriptorium/shenoute.eagerness/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 207149,
+          "row_count": 17064
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "mercurius",
+      "path": "scriptorium/mercurius",
+      "created_at": "2025-10-29T06:54:25.615229Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 4,
+        "segments": 629,
+        "tokens": 26455
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.thundered",
+      "path": "scriptorium/shenoute.thundered",
+      "created_at": "2025-10-29T06:20:34.815339Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 1,
+        "segments": 50,
+        "tokens": 2339
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.1corinthians",
+      "path": "scriptorium/bohairic.1corinthians",
+      "created_at": "2025-10-29T06:34:41.538895Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 23,
+        "segments": 601,
+        "tokens": 17035
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.nt",
+      "path": "scriptorium/bohairic.nt",
+      "created_at": "2025-10-28T21:09:39.859659Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 260,
+        "segments": 7957,
+        "tokens": 246274
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/bohairic.nt/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 344330,
+          "row_count": 260
+        },
+        {
+          "path": "scriptorium/bohairic.nt/segments.parquet",
+          "type": "segments",
+          "size_bytes": 1600726,
+          "row_count": 7957
+        },
+        {
+          "path": "scriptorium/bohairic.nt/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 1939135,
+          "row_count": 246274
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "magical-papyri",
+      "path": "scriptorium/magical-papyri",
+      "created_at": "2025-10-29T06:54:46.560690Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic-habakkuk",
+      "path": "scriptorium/bohairic-habakkuk",
+      "created_at": "2025-10-29T06:35:37.994809Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "sahidica.nt",
+      "path": "scriptorium/sahidica.nt",
+      "created_at": "2025-10-28T22:02:06.063606Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 32,
+        "segments": 1111,
+        "tokens": 32214
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/sahidica.nt/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 0,
+          "row_count": 32
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.longinus.lucius",
+      "path": "scriptorium/life.longinus.lucius",
+      "created_at": "2025-10-29T06:20:46.923404Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 5,
+        "segments": 275,
+        "tokens": 11531
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "life.paul.tamma",
+      "path": "scriptorium/life.paul.tamma",
+      "created_at": "2025-10-29T06:20:59.302715Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 159,
+        "tokens": 4106
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pachomius-instructions",
+      "path": "scriptorium/pachomius-instructions",
+      "created_at": "2025-10-29T06:54:46.469554Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "john-constantinople",
+      "path": "scriptorium/john-constantinople",
+      "created_at": "2025-10-29T06:54:46.631085Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-listen",
+      "path": "scriptorium/shenoute-listen",
+      "created_at": "2025-10-29T06:35:21.560725Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute.crushed",
+      "path": "scriptorium/shenoute.crushed",
+      "created_at": "2025-10-28T22:02:37.825202Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 5,
+        "segments": 102,
+        "tokens": 4323
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo-celestinus",
+      "path": "scriptorium/pseudo-celestinus",
+      "created_at": "2025-10-29T06:35:00.645461Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "acts-pilate",
+      "path": "scriptorium/acts-pilate",
+      "created_at": "2025-10-29T06:35:38.137359Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "sahidic.ot",
+      "path": "scriptorium/sahidic.ot",
+      "created_at": "2025-10-28T21:09:09.473911Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 130,
+        "segments": 3833,
+        "tokens": 133908
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/sahidic.ot/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 231502,
+          "row_count": 130
+        },
+        {
+          "path": "scriptorium/sahidic.ot/segments.parquet",
+          "type": "segments",
+          "size_bytes": 814688,
+          "row_count": 3833
+        },
+        {
+          "path": "scriptorium/sahidic.ot/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 1118995,
+          "row_count": 133908
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pistis.sophia",
+      "path": "scriptorium/pistis.sophia",
+      "created_at": "2025-10-28T21:10:16.741776Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 28,
+        "segments": 2323,
+        "tokens": 119506
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/pistis.sophia/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 71473,
+          "row_count": 28
+        },
+        {
+          "path": "scriptorium/pistis.sophia/segments.parquet",
+          "type": "segments",
+          "size_bytes": 623696,
+          "row_count": 2323
+        },
+        {
+          "path": "scriptorium/pistis.sophia/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 1018821,
+          "row_count": 119506
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "abraham",
+      "path": "scriptorium/abraham",
+      "created_at": "2025-10-29T06:54:25.338446Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "proclus-homilies",
+      "path": "scriptorium/proclus-homilies",
+      "created_at": "2025-10-29T06:54:46.425564Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "martyrdom.victor",
+      "path": "scriptorium/martyrdom.victor",
+      "created_at": "2025-10-29T06:21:10.664300Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 9,
+        "segments": 924,
+        "tokens": 19812
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "helias",
+      "path": "scriptorium/helias",
+      "created_at": "2025-10-29T06:54:25.087115Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 6,
+        "segments": 531,
+        "tokens": 16514
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "sahidica.1corinthians",
+      "path": "scriptorium/sahidica.1corinthians",
+      "created_at": "2025-10-29T06:34:41.510007Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 23,
+        "segments": 601,
+        "tokens": 17038
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "doc-papyri",
+      "path": "scriptorium/doc-papyri",
+      "created_at": "2025-10-29T06:54:46.494581Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "pseudo-theophilus",
+      "path": "scriptorium/pseudo-theophilus",
+      "created_at": "2025-10-29T06:35:00.545388Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "apophthegmata.patrum",
+      "path": "scriptorium/apophthegmata.patrum",
+      "created_at": "2025-10-28T21:10:06.327739Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 166,
+        "segments": 1062,
+        "tokens": 18013
+      },
+      "artifacts": [
+        {
+          "path": "scriptorium/apophthegmata.patrum/documents.jsonl",
+          "type": "documents",
+          "size_bytes": 304351,
+          "row_count": 166
+        },
+        {
+          "path": "scriptorium/apophthegmata.patrum/segments.parquet",
+          "type": "segments",
+          "size_bytes": 126733,
+          "row_count": 1062
+        },
+        {
+          "path": "scriptorium/apophthegmata.patrum/tokens.parquet",
+          "type": "tokens",
+          "size_bytes": 241112,
+          "row_count": 18013
+        }
+      ]
+    },
+    {
+      "source": "scriptorium",
+      "collection": "bohairic.life.shenoute",
+      "path": "scriptorium/bohairic.life.shenoute",
+      "created_at": "2025-10-29T06:20:59.857206Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 2,
+        "segments": 296,
+        "tokens": 9940
+      },
+      "artifacts": []
+    },
+    {
+      "source": "scriptorium",
+      "collection": "shenoute-prince",
+      "path": "scriptorium/shenoute-prince",
+      "created_at": "2025-10-29T06:35:21.569905Z",
+      "parser_version": "scriptorium@0.1.0",
+      "counts": {
+        "documents": 0,
+        "segments": 0,
+        "tokens": 0
+      },
+      "artifacts": []
+    }
+  ]
+}

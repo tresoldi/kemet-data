@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://kemet-data.org/schemas/segment.v1.json",
+  "title": "Segment",
+  "description": "Schema for a text segment (sentence, verse, or logical unit)",
+  "type": "object",
+  "required": [
+    "document_id",
+    "segment_id",
+    "order",
+    "text_canonical",
+    "content_hash",
+    "created_at"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "Reference to parent document"
+    },
+    "segment_id": {
+      "type": "string",
+      "description": "Stable segment identifier within document"
+    },
+    "order": {
+      "type": "integer",
+      "description": "Position in document (0-indexed)",
+      "minimum": 0
+    },
+    "text_canonical": {
+      "type": "string",
+      "description": "Canonical text representation (NFC for Coptic, transliteration for Egyptian)"
+    },
+    "text_stripped": {
+      "type": ["string", "null"],
+      "description": "Text with diacritics removed (Coptic only)"
+    },
+    "passage_ref": {
+      "type": ["string", "null"],
+      "description": "Canonical passage reference (e.g., 'John 3:16', 'PT §12')"
+    },
+    "dialect": {
+      "type": ["string", "null"],
+      "description": "Dialect marker for Coptic texts"
+    },
+    "metadata": {
+      "type": ["object", "null"],
+      "description": "Additional segment-specific metadata"
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "BLAKE3 hash of text_canonical",
+      "pattern": "^blake3:[a-f0-9]{64}$"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 8601 timestamp",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,482 @@
+# KEMET Data: License Information
+
+**Version 0.1.0**
+**Release Date**: 2025-12-01
+
+---
+
+## Database License
+
+The KEMET Data database (corpus.duckdb and lexicon.duckdb) as a whole is licensed under:
+
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+### You are free to:
+
+- **Share**: Copy and redistribute the material in any medium or format
+- **Adapt**: Remix, transform, and build upon the material
+
+### Under the following terms:
+
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+- **NonCommercial**: You may not use the material for commercial purposes.
+
+- **ShareAlike**: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+---
+
+## Required Attribution
+
+If you use KEMET Data in your research, please cite:
+
+```bibtex
+@dataset{tresoldi_kilani_2025_kemet,
+  author = {Tresoldi, Tiago and Kilani, Marwan},
+  title = {{KEMET Data: Annotated Corpus and Lexicon for
+           Ancient Egyptian and Coptic}},
+  year = {2025},
+  publisher = {Zenodo},
+  version = {0.1.0}
+  # DOI will be assigned by Zenodo upon publication
+}
+```
+
+### Authors
+
+- **Tiago Tresoldi**
+  - Affiliation: Uppsala University, Department of Linguistics and Philology
+  - Email: tiago.tresoldi@lingfil.uu.se
+  - ORCID: 
+
+- **Marwan Kilani**
+  - Affiliation: University of Basel, Department of Languages and Literatures 
+  - Email: marwan.kilani@unibas.ch
+  - ORCID: 
+
+---
+
+## Source-Specific Licenses
+
+KEMET Data integrates materials from multiple sources, each with its own license. Individual source licenses are detailed below and MUST be respected when using the corresponding portions of the database.
+
+### 1. Horner Sahidic New Testament
+
+**Source**: George W. Horner, *The Coptic Version of the New Testament in the Southern Dialect* (Oxford, 1911-1924)
+
+**License**: **Public Domain**
+
+**Coverage in KEMET Data**:
+- Collection: `horner:sahidic_nt`
+- Documents: 260 (full New Testament)
+- Tokens: ~140,000
+
+**Details**: Published over 100 years ago, now in the public domain in all jurisdictions.
+
+**No attribution required**, but we acknowledge:
+> George W. Horner, *The Coptic Version of the New Testament in the Southern Dialect*, 7 volumes (Oxford: Clarendon Press, 1911-1924).
+
+---
+
+### 2. Coptic SCRIPTORIUM
+
+**Source**: Coptic SCRIPTORIUM (https://copticscriptorium.org/)
+
+**License**: **Creative Commons Attribution 4.0 International (CC BY 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by/4.0/
+
+**Coverage in KEMET Data**:
+- Collections: 67 (sahidic.nt, apophthegmata, shenoute.*, martyrdoms, letters, etc.)
+- Documents: ~1,100
+- Tokens: ~120,000
+
+**Required Attribution**:
+> Coptic SCRIPTORIUM. Various texts and editions. Licensed under CC BY 4.0.
+> Available at https://copticscriptorium.org/
+
+**Citation**:
+```bibtex
+@misc{coptic_scriptorium,
+  author = {Zeldes, Amir and Schroeder, Caroline T. and others},
+  title = {Coptic SCRIPTORIUM},
+  url = {https://copticscriptorium.org/},
+  note = {Accessed 2025-01-30}
+}
+```
+
+**Terms**:
+- Attribution required
+- Commercial use permitted (but restricted by KEMET Data's NC license)
+- Adaptation permitted
+- No ShareAlike requirement (but KEMET Data applies SA)
+
+**Notes**:
+- Normalized editions from various Coptic texts
+- Includes linguistic annotations (lemmatization, POS tagging, morphology)
+- See `provenance` field in database for specific text editions and editors
+
+---
+
+### 3. Universal Dependencies - Coptic
+
+**Source**: Universal Dependencies Project (https://universaldependencies.org/)
+
+**License**: **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by-sa/4.0/
+
+**Coverage in KEMET Data**:
+- Collection: `ud_coptic`
+- Documents: 1 (treebank)
+- Sentences: 361
+- Tokens: ~5,000
+
+**Required Attribution**:
+> Universal Dependencies - Coptic Scriptorium Treebank.
+> Developed by Amir Zeldes. Licensed under CC BY-SA 4.0.
+> Available at https://universaldependencies.org/
+
+**Citation**:
+```bibtex
+@misc{ud_coptic,
+  author = {Zeldes, Amir},
+  title = {Universal Dependencies - Coptic Scriptorium Treebank},
+  year = {2024},
+  url = {https://github.com/UniversalDependencies/UD_Coptic-Scriptorium},
+  note = {Universal Dependencies version 2.14}
+}
+```
+
+**Terms**:
+- Attribution required
+- Commercial use permitted (but restricted by KEMET Data's NC license)
+- Adaptation permitted
+- **ShareAlike required**: Derivative works must use same license
+
+**Notes**:
+- Includes dependency parsing annotations (head, deprel)
+- Based on Coptic SCRIPTORIUM annotations
+- Follows Universal Dependencies annotation scheme
+
+---
+
+### 4. Ancient Egyptian Sourcebook (AES)
+
+**Source**: Ancient Egyptian Online, University of Texas at Austin (https://www.linguistics.ucla.edu/people/schuh/AEO/)
+
+**License**: **Public Domain** (academic resource, freely available)
+
+**Coverage in KEMET Data**:
+- Collections: Early Egyptian texts (Middle Kingdom, New Kingdom)
+- Documents: ~60
+- Tokens: ~60,000
+
+**Details**: Educational resource provided by University of Texas Linguistics Research Center. Content is freely available for academic use.
+
+**Attribution** (recommended but not required):
+> Ancient Egyptian Online. University of Texas at Austin Linguistics Research Center.
+> Available at https://www.linguistics.ucla.edu/people/schuh/AEO/
+
+**Citation**:
+```bibtex
+@misc{aes,
+  author = {University of Texas at Austin},
+  title = {Ancient Egyptian Online},
+  url = {https://www.linguistics.ucla.edu/people/schuh/AEO/},
+  note = {Accessed 2025-01-30}
+}
+```
+
+**Notes**:
+- Includes Middle Egyptian texts with transliterations
+- Educational resource with some OCR-sourced content
+- May contain OCR errors (see SPECS.md for data quality notes)
+
+---
+
+### 5. Ramses Online - Late Egyptian Corpus
+
+**Source**: Ramses Project, Université de Liège (http://ramses.ulg.ac.be/)
+
+**License**: **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+**Zenodo DOI**: https://doi.org/10.5281/zenodo.4954597
+
+**Coverage in KEMET Data**:
+- Collections: 3 (train, val, test splits)
+- Documents: 3 collective documents
+- Sentences: 71,263 parallel sentence pairs (Gardiner codes + transliterations)
+- Tokens: ~530,000
+- Period: Late Egyptian (New Kingdom to Third Intermediate Period, ca. 1350-700 BCE)
+
+**Required Attribution**:
+> the Ramses transliteration corpus V. 2019-09-01, University of Liege/Projet Ramses
+
+**Citation**:
+```bibtex
+@dataset{rosmorduc_2021_ramses,
+  author = {Rosmorduc, Serge and Polis, Stéphane and Winand, Jean},
+  title = {Ramses Automated Transliteration Software},
+  year = {2021},
+  publisher = {Zenodo},
+  version = {2021-06-15},
+  doi = {10.5281/zenodo.4954597},
+  url = {https://doi.org/10.5281/zenodo.4954597}
+}
+```
+
+**Terms**:
+- Attribution required
+- **NonCommercial**: Commercial use NOT permitted
+- Adaptation permitted
+- **ShareAlike required**: Derivative works must use same license
+
+**Notes**:
+- Richly annotated corpus of Late Egyptian texts
+- Parallel data: hieroglyphic transcriptions (Gardiner codes) and transliterations
+- Data extracted from the larger Ramses project database (520,000+ occurrences)
+- Originally created for training machine learning transliteration models
+- Published article: Rosmorduc, S. (2021). "Automated Transliteration of Late Egyptian Using Neural Networks", *Lingua Aegyptia* 28: 233-257
+
+---
+
+### 6. Thesaurus Linguae Aegyptiae (TLA) - Metadata
+
+**Source**: Thesaurus Linguae Aegyptiae, Berlin-Brandenburgische Akademie der Wissenschaften (https://thesaurus-linguae-aegyptiae.de/)
+
+**License**: **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by-sa/4.0/
+
+**Coverage in KEMET Data**:
+- TLA IDs integrated for Egyptian lemmas (enabling future hieroglyphic annotation)
+- Source: Hugging Face dataset `thesaurus-linguae-aegyptiae/tla-Earlier_Egyptian_original-v18-premium`
+- Note: Hieroglyphic writing data extracted but not yet populated in v0.1.0 (planned for future release)
+
+**Required Attribution**:
+> Thesaurus Linguae Aegyptiae. Berlin-Brandenburgische Akademie der Wissenschaften.
+> Licensed under CC BY-SA 4.0.
+> Available at https://thesaurus-linguae-aegyptiae.de/
+
+**Citation**:
+```bibtex
+@misc{tla,
+  author = {Berlin-Brandenburgische Akademie der Wissenschaften},
+  title = {Thesaurus Linguae Aegyptiae},
+  url = {https://thesaurus-linguae-aegyptiae.de/},
+  note = {Accessed via Hugging Face dataset, 2025-01-30}
+}
+```
+
+**Terms**:
+- Attribution required
+- Commercial use permitted (but restricted by KEMET Data's NC license)
+- Adaptation permitted
+- **ShareAlike required**: Derivative works must use same license
+
+**Notes**:
+- TLA IDs matched to KEMET corpus lemmas for interoperability
+- No full TLA corpus text included in KEMET Data
+- Extracted from Hugging Face dataset (12,773 Earlier Egyptian sentences)
+- Hieroglyphic writing system integrated in v0.1.0 with Unicode hieroglyphs
+
+---
+
+### 7. Coptic Dictionary Online (CDO)
+
+**Source**: KELLIA Coptic Dictionary Online (https://github.com/KELLIA/dictionary)
+
+**License**: **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**
+
+**License URL**: https://creativecommons.org/licenses/by-sa/4.0/
+
+**Coverage in KEMET Data**:
+- Coptic lexicon: 9,306 lemmas
+- Database: `alpha_kyima_rc1.db` (SQLite)
+- CDO ID cross-references in `cdo_mappings` table (9,493 entries)
+
+**Required Attribution**:
+> KELLIA Coptic Dictionary Online.
+> Licensed under CC BY-SA 4.0.
+> Available at https://github.com/KELLIA/dictionary
+
+**Citation**:
+```bibtex
+@misc{cdo,
+  author = {KELLIA},
+  title = {Coptic Dictionary Online},
+  year = {2024},
+  url = {https://github.com/KELLIA/dictionary},
+  note = {alpha\_kyima\_rc1 release}
+}
+```
+
+**Terms**:
+- Attribution required
+- Commercial use permitted (but restricted by KEMET Data's NC license)
+- Adaptation permitted
+- **ShareAlike required**: Derivative works must use same license
+
+**Notes**:
+- Full Coptic lexicon with glosses in English, German, and French
+- POS tags and etymology notes included
+- CDO IDs preserved for cross-referencing with other Coptic resources
+
+---
+
+### 8. ORAEC Coptic Etymologies
+
+**Source**: ORAEC digitized Coptic etymologies (https://github.com/oraec/coptic_etymologies)
+
+**License**: **CC0 1.0 Universal (Public Domain Dedication)**
+
+**License URL**: https://creativecommons.org/publicdomain/zero/1.0/
+
+**Coverage in KEMET Data**:
+- Etymology relations: 1,750 Coptic→Egyptian derivations
+- Source dictionaries: Černý, Vycichl, Westendorf
+- Table: `etymology_relations`
+
+**Required Attribution**:
+> ORAEC Coptic Etymologies.
+> Digitization of Jaroslav Černý, Werner Vycichl, and Wolfhart Westendorf etymological dictionaries.
+> Dedicated to the public domain under CC0 1.0.
+> Available at https://github.com/oraec/coptic_etymologies
+
+**Citation**:
+```bibtex
+@misc{oraec_etymologies,
+  author = {ORAEC},
+  title = {Digitization of Coptic Etymologies},
+  year = {2024},
+  url = {https://github.com/oraec/coptic_etymologies},
+  note = {CC0 1.0 Universal}
+}
+```
+
+**Terms**:
+- **No attribution required** (CC0 / Public Domain)
+- Commercial use permitted (but restricted by KEMET Data's NC license)
+- Adaptation permitted
+- No ShareAlike requirement
+
+**Notes**:
+- Maps CDO IDs (Coptic) to ORAEC/TLA IDs (Egyptian)
+- Coptic side fully resolved (via CDO mappings)
+- Egyptian side stored as external IDs in metadata (resolution pending)
+- Based on three major Coptic etymological dictionaries
+
+---
+
+## Derived Work License
+
+Since this database combines works under different licenses (CC BY 4.0, CC BY-SA 4.0, Public Domain), and includes our own curation and annotation work, the **most restrictive terms apply**:
+
+**Overall License**: CC BY-NC-SA 4.0
+
+**License Version**: All Creative Commons licenses referenced use version 4.0 unless otherwise specified.
+
+**Why NonCommercial?**:
+- To protect the academic nature of the resource
+- To prevent commercial exploitation without author permission
+- Commercial use requires separate license agreement (contact authors)
+
+**Why ShareAlike?**:
+- Required by UD-Coptic and TLA sources (CC BY-SA 4.0)
+- Ensures derivative works remain open for research
+
+**Compatibility**:
+- All source licenses are compatible with CC BY-NC-SA 4.0
+- CC BY 4.0 (Coptic SCRIPTORIUM) permits NC restriction
+- CC BY-SA 4.0 (UD-Coptic, TLA) permits NC restriction
+- Public Domain (Horner, AES) permits any restriction
+
+---
+
+## Commercial Use
+
+**Commercial use of KEMET Data is NOT permitted** under the CC BY-NC-SA 4.0 license.
+
+### What counts as commercial use?
+
+- Using the database in a product or service that generates revenue
+- Using the database for training commercial language models
+- Incorporating the database into proprietary software
+- Using the database for consulting or paid services
+
+### What is NOT commercial use?
+
+- Academic research (even if published in commercial journals)
+- Educational use in universities
+- Open-source projects with no revenue model
+- Personal study and research
+- Non-profit organization use
+
+---
+
+## Warranty and Liability
+
+KEMET Data is provided "AS IS" without warranty of any kind, either expressed or implied, including but not limited to:
+
+- Warranties of merchantability
+- Fitness for a particular purpose
+- Non-infringement
+
+**The authors shall not be liable for**:
+- Any damages arising from use of the database
+- Errors or omissions in the data
+- Loss of data or profits
+- Any indirect, incidental, or consequential damages
+
+---
+
+## Source Data Integrity
+
+All source materials have been:
+- Downloaded and cached with provenance tracking
+- Processed with respect to original licenses
+- Attributed correctly in database metadata
+- Preserved in their original form before curation
+
+Each document in the database includes a `provenance` JSON field with:
+- Source identifier
+- Original license
+- Retrieval timestamp
+- Source URL (where applicable)
+- Processing version
+
+---
+
+## Acknowledgments
+
+We thank all contributors to the source projects:
+
+- **Coptic SCRIPTORIUM team**: Amir Zeldes, Caroline T. Schroeder, and contributors
+- **Universal Dependencies team**: Joakim Nivre, Amir Zeldes, and contributors
+- **TLA team**: Berlin-Brandenburgische Akademie der Wissenschaften
+- **AES team**: University of Texas at Austin
+- **George W. Horner**: For pioneering Coptic New Testament scholarship
+
+Without their open data policies, this resource would not exist.
+
+---
+
+## Questions?
+
+For license questions, contact:
+- Tiago Tresoldi: tiago.tresoldi@lingfil.uu.se
+- Marwan Kilani: marwan.kilani@unibas.ch
+
+For source-specific license questions, consult the original source websites listed above.
+
+---
+
+**Last Updated**: 2025-12-01
+**Version**: 0.1.0
