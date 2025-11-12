@@ -80,7 +80,16 @@ class DatabaseManager extends EventTarget {
     }
 
     async downloadWithProgress(url, progressCallback) {
-        const response = await fetch(url);
+        // GitHub releases may redirect, so follow redirects and handle CORS
+        const response = await fetch(url, {
+            mode: 'cors',
+            redirect: 'follow'
+        });
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch ${url}: ${response.status} ${response.statusText}`);
+        }
+
         const contentLength = response.headers.get('content-length');
         const total = parseInt(contentLength, 10);
 
