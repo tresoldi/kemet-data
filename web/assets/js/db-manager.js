@@ -127,8 +127,8 @@ class DatabaseManager extends EventTarget {
         console.log('Corpus blob size:', corpusBlob.size, 'bytes');
         console.log('Lexicon blob size:', lexiconBlob.size, 'bytes');
 
-        // Use local files only
-        const DUCKDB_BASE = '/assets/lib/node_modules/@duckdb/duckdb-wasm/dist/';
+        // Use local files only - relative path for GitHub Pages compatibility
+        const DUCKDB_BASE = './assets/lib/node_modules/@duckdb/duckdb-wasm/dist/';
 
         // Step 1: Import DuckDB from CDN
         this.dispatchInitProgress(++currentStep, totalSteps, 'Loading DuckDB module...');
