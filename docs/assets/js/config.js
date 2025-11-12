@@ -3,10 +3,10 @@
  */
 
 export const config = {
-    // Database paths - hosted on GitHub Releases (via CORS proxy)
+    // Database paths - hosted on Hugging Face
     databases: {
-        corpus: 'https://cors-anywhere.com/https://github.com/tresoldi/kemet-data/releases/download/v0.0.1/corpus.duckdb',
-        lexicon: 'https://cors-anywhere.com/https://github.com/tresoldi/kemet-data/releases/download/v0.0.1/lexicon.duckdb'
+        corpus: 'https://huggingface.co/datasets/tresoldi/kemet-data/resolve/main/corpus.duckdb',
+        lexicon: 'https://huggingface.co/datasets/tresoldi/kemet-data/resolve/main/lexicon.duckdb'
     },
 
     // Database versions (for cache invalidation)
