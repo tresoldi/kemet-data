@@ -127,18 +127,16 @@ class DatabaseManager extends EventTarget {
         console.log('Corpus blob size:', corpusBlob.size, 'bytes');
         console.log('Lexicon blob size:', lexiconBlob.size, 'bytes');
 
-        // Use local files only - relative path for GitHub Pages compatibility
-        const DUCKDB_BASE = './assets/lib/node_modules/@duckdb/duckdb-wasm/dist/';
-
         // Step 1: Import DuckDB from CDN
         this.dispatchInitProgress(++currentStep, totalSteps, 'Loading DuckDB module...');
         console.log('DatabaseManager: Loading DuckDB from CDN...');
         const duckdb = await import('https://esm.sh/@duckdb/duckdb-wasm@1.30.0');
 
-        // Manual bundle configuration with local files only
+        // Build absolute URLs for Worker - relative paths don't work with Web Workers
+        const baseUrl = new URL('./assets/lib/node_modules/@duckdb/duckdb-wasm/dist/', window.location.href);
         const bundle = {
-            mainModule: DUCKDB_BASE + 'duckdb-mvp.wasm',
-            mainWorker: DUCKDB_BASE + 'duckdb-browser-mvp.worker.js'
+            mainModule: new URL('duckdb-mvp.wasm', baseUrl).href,
+            mainWorker: new URL('duckdb-browser-mvp.worker.js', baseUrl).href
         };
 
         // Step 2: Create worker
