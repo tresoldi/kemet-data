@@ -11,8 +11,8 @@ export const config = {
 
     // Database versions (for cache invalidation)
     versions: {
-        corpus: '0.0.1',
-        lexicon: '0.0.1'
+        corpus: '1.0.0',
+        lexicon: '1.0.0'
     },
 
     // Database sizes (in bytes) for progress calculation

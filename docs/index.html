@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEMET Data Explorer</title>
+    <meta name="description" content="Interactive interface for querying Ancient Egyptian and Coptic texts and lexicon">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- External libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/localforage@1.10.0/dist/localforage.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-content">
+            <h2>KEMET Data Explorer</h2>
+            <p class="loading-info">Loading databases... This is a one-time download. Databases will be cached in your browser for instant access on future visits.</p>
+
+            <!-- Lexicon Database Progress -->
+            <div class="db-progress">
+                <h3>Lexicon Database (84 MB)</h3>
+                <div class="progress-bar-container">
+                    <div id="lexicon-progress-bar" class="progress-bar">
+                        <span id="lexicon-percent">0%</span>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <span id="lexicon-status">Waiting...</span>
+                    <span id="lexicon-size">84 MB</span>
+                </div>
+            </div>
+
+            <!-- Corpus Database Progress -->
+            <div class="db-progress">
+                <h3>Corpus Database (741 MB)</h3>
+                <div class="progress-bar-container">
+                    <div id="corpus-progress-bar" class="progress-bar">
+                        <span id="corpus-percent">0%</span>
+                    </div>
+                </div>
+                <div class="progress-info">
+                    <span id="corpus-status">Waiting...</span>
+                    <span id="corpus-size">741 MB</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div id="app" style="display: none;">
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <h1 class="app-title">KEMET Data Explorer</h1>
+                <div class="nav-links">
+                    <a href="#dictionary" class="nav-link" data-view="dictionary">Dictionary</a>
+                    <a href="#query-builder" class="nav-link" data-view="query-builder">Query Builder</a>
+                    <a href="#sql-editor" class="nav-link" data-view="sql-editor">SQL Editor</a>
+                    <a href="#about" class="nav-link" data-view="about">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Area -->
+        <main class="main-content">
+            <!-- Dictionary View -->
+            <div id="dictionary-view" class="view-container">
+                <!-- Will be populated by dictionary.js -->
+            </div>
+
+            <!-- Query Builder View -->
+            <div id="query-builder-view" class="view-container">
+                <!-- Will be populated by query-builder.js -->
+            </div>
+
+            <!-- SQL Editor View -->
+            <div id="sql-editor-view" class="view-container">
+                <!-- Will be populated by sql-editor.js -->
+            </div>
+
+            <!-- About View -->
+            <div id="about-view" class="view-container">
+                <!-- Will be populated by app.js -->
+            </div>
+        </main>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script type="module" src="assets/js/config.js"></script>
+    <script type="module" src="assets/js/utils/unicode-utils.js"></script>
+    <script type="module" src="assets/js/utils/export.js"></script>
+    <script type="module" src="assets/js/utils/sql-templates.js"></script>
+    <script type="module" src="assets/js/utils/cookbook.js"></script>
+    <script type="module" src="assets/js/db-manager.js"></script>
+    <script type="module" src="assets/js/components/loading-screen.js"></script>
+    <script type="module" src="assets/js/components/results-table.js"></script>
+    <script type="module" src="assets/js/components/concordance-view.js"></script>
+    <script type="module" src="assets/js/components/lemma-detail.js"></script>
+    <script type="module" src="assets/js/components/dictionary.js"></script>
+    <script type="module" src="assets/js/components/query-builder.js"></script>
+    <script type="module" src="assets/js/components/sql-editor.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
