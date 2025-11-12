@@ -1,0 +1,1 @@
+Not found: /@duckdb/duckdb-wasm@1.28.0/dist/duckdb-esm.js
